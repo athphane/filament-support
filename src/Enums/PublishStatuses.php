@@ -35,7 +35,7 @@ enum PublishStatuses: string implements HasColor, HasIcon, HasLabel
         };
     }
 
-    public function getIcon(): string|BackedEnum|null
+    public function getIcon(): string|null|\BackedEnum|Htmlable
     {
         return match ($this) {
             self::DRAFT => Heroicon::OutlinedPencil,
