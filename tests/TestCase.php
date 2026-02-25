@@ -2,9 +2,9 @@
 
 namespace Athphane\FilamentSupport\Tests;
 
+use Athphane\FilamentSupport\FilamentSupportServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Athphane\FilamentSupport\FilamentSupportServiceProvider;
 
 class TestCase extends Orchestra
 {

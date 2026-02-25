@@ -2,9 +2,9 @@
 
 namespace Athphane\FilamentSupport;
 
+use Athphane\FilamentSupport\Commands\FilamentSupportCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Athphane\FilamentSupport\Commands\FilamentSupportCommand;
 
 class FilamentSupportServiceProvider extends PackageServiceProvider
 {
