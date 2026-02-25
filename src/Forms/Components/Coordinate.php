@@ -70,8 +70,7 @@ class Coordinate extends Field
             }
         });
 
-        $this->beforeStateDehydrated(function (Coordinate $component, $state) {
-        });
+        $this->beforeStateDehydrated(function (Coordinate $component, $state) {});
 
         $this->dehydrated(true);
     }

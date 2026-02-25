@@ -22,10 +22,9 @@ class FilamentSupportServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-support')
             ->hasConfigFile()
-            ->hasViews()
-            // ->hasMigration('create_filament_support_table')
-            // ->hasCommand(FilamentSupportCommand::class)
-        ;
+            ->hasViews();
+        // ->hasMigration('create_filament_support_table')
+        // ->hasCommand(FilamentSupportCommand::class)
     }
 
     public function bootingPackage(): void

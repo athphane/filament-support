@@ -15,7 +15,7 @@ enum PublishStatuses: string implements HasColor, HasIcon, HasLabel
     case PUBLISHED = 'published';
     case REJECTED = 'rejected';
 
-    public function getColor(): string | array | null
+    public function getColor(): string|array|null
     {
         return match ($this) {
             self::DRAFT => 'dark',
@@ -25,7 +25,7 @@ enum PublishStatuses: string implements HasColor, HasIcon, HasLabel
         };
     }
 
-    public function getLabel(): string | Htmlable | null
+    public function getLabel(): string|Htmlable|null
     {
         return match ($this) {
             self::DRAFT => 'Draft',
@@ -35,7 +35,7 @@ enum PublishStatuses: string implements HasColor, HasIcon, HasLabel
         };
     }
 
-    public function getIcon(): string | BackedEnum | null
+    public function getIcon(): string|BackedEnum|null
     {
         return match ($this) {
             self::DRAFT => Heroicon::OutlinedPencil,
